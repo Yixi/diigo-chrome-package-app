@@ -1,0 +1,28 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+
+/* mainpage*/
+
+#navBars{
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: #08c;
+}
+#navBars ul{
+    padding:0;
+}
+#navBars ul li{
+    list-style: none;
+    padding-left: 0;
+}
+
+#navBars ul li a{
+    color: #fff;
+}
+
+#mainContent{
+    padding-left: 50px;
+}

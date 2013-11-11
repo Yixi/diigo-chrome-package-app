@@ -1,0 +1,46 @@
+<!doctype html>
+<html data-ng-app="diigoApp" data-ng-csp>
+    <head>
+        <meta charset="utf-8">
+        <title>diigo</title>
+
+        <!-- build:css styles/style.css -->
+        <link rel="stylesheet" href="bower_components/angular/angular-csp.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <!-- endbuild -->
+
+        <!-- build:css styles/app.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+
+    </head>
+    <body>
+        <div class="navBars" data-ng-controller="NavBarCtrl" id="navBars">
+            <ul>
+                <li data-ng-repeat="nav in navs">
+                    <a data-ng-click="redirect(nav.href)">{{nav.name}}</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="container" id="mainContent" data-ng-view="" ></div>
+
+
+    <!-- build:js scripts/lib.js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- endbuild -->
+
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/directive/note.js"></script>
+        <script src="scripts/services/constant.js"></script>
+        <script src="scripts/services/storage.js"></script>
+        <script src="scripts/controllers/MainCtrl.js"></script>
+        <script src="scripts/controllers/Note/noteMainCtrl.js"></script>
+    <!-- endbuild -->
+    </body>
+</html>

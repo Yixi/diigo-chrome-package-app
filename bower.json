@@ -1,0 +1,10 @@
+{
+  "name": "crx-diigo",
+  "version": "0.0.0",
+  "dependencies": {
+        "angular":"~1.2.0",
+        "angular-route":"latest",
+        "bootstrap":"~3"
+  },
+  "devDependencies": {}
+}
